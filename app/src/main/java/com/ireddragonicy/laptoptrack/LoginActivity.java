@@ -25,7 +25,7 @@ public class LoginActivity extends ComponentActivity {
 
     static {
         users.put("lecturer", new String[]{"12345", "Lecturer"});
-        users.put("tech", new String[]{"12345", "Technician"});
+        users.put("technician", new String[]{"12345", "Technician"});
         users.put("student", new String[]{"12345", "Student"});
         users.put("itmanager", new String[]{"12345", "ITManager"});
     }

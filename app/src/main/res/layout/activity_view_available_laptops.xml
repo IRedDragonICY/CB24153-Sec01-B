@@ -16,7 +16,7 @@
         android:layout_gravity="center_horizontal"
         android:paddingBottom="16dp"/>
 
-    <RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_available_laptops"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
