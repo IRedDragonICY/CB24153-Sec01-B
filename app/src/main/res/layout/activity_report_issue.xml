@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/report_issue_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Activity Title -->
+        <TextView
+            android:id="@+id/report_issue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Issue"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="24dp"/>
+
+        <!-- Laptop ID Field -->
+        <EditText
+            android:id="@+id/edit_text_report_laptop_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Laptop ID"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Issue Description Field -->
+        <EditText
+            android:id="@+id/edit_text_issue_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Describe the issue"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:gravity="top"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Report Button -->
+        <Button
+            android:id="@+id/button_report_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Issue"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="com.ireddragonicy.laptoptrack">
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32"
+                     tools:ignore="ScopedStorage"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:label="LaptopTrack"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaptopTrack">
+
+        <!-- Introductory Activity (Splash Screen) -->
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity android:name=".LoginActivity" />
+
+        <!-- Register Activity -->
+        <activity android:name=".RegisterActivity" />
+
+        <!-- Dashboard Activities -->
+        <activity android:name=".LecturerDashboardActivity" />
+        <activity android:name=".TechnicianDashboardActivity" />
+        <activity android:name=".StudentDashboardActivity" />
+        <activity android:name=".ITManagerDashboardActivity" />
+
+        <!-- Functional Activities -->
+        <activity android:name=".ViewAvailableLaptopsActivity" />
+        <activity android:name=".CheckOutLaptopActivity" />
+        <activity android:name=".ReportIssueActivity" />
+        <activity android:name=".ViewAllStatusesActivity" />
+        <activity android:name=".CheckInOutLaptopActivity" />
+        <activity android:name=".UpdateLaptopInfoActivity" />
+        <activity android:name=".ManageDrawerAssignmentsActivity" />
+        <activity android:name=".ManageUserAccountsActivity" />
+        <activity android:name=".ViewAnalyticsReportsActivity" />
+        <activity android:name=".RequestCheckOutActivity" />
+        <activity android:name=".ViewAssignmentsActivity" />
+
+    </application>
+
+</manifest>

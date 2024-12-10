@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_laptop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/text_view_laptop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: Laptop001"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_view_laptop_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model: Dell XPS 13"/>
+
+    <TextView
+        android:id="@+id/text_view_laptop_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Available"/>
+
+    <TextView
+        android:id="@+id/text_view_laptop_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawer: A1"/>
+
+</LinearLayout>
